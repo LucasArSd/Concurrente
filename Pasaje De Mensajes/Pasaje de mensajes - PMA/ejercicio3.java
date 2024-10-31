@@ -11,7 +11,7 @@ process cocinero[id: 0..1]{
 	text pedido;
 	while(true){
 		receive AtencionPedido(idCliente, pedido);
-		cocinarPedido(pedido);
+		pedido = cocinarPedido();
 		send EntregaPedido[idCliente](pedido);
 	}
 }
