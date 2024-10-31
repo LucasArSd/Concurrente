@@ -13,7 +13,7 @@ process Empleado{
 	pila cabinas[10]{1..10};
 
 	while true(){
-		if (!cabinas.isEmpty()){
+		if (!cabinas.isEmpty()){ //Verifico si hay cabina libre
 			if (not empty(PedidoAtencion)){
 				receive PedidoAtencion(idCliente);
 				idCabina = cabinas.pop(); //desapilo la cabina
