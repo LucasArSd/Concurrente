@@ -47,4 +47,4 @@ process Cliente[id: 0..N-1]{
 
 /*solución punto B*/
 
-//Lo que se me ocurrio es poner al principio del process empleado, un while de not Empty(Pagos)
+//Lo que se me ocurrio es poner al principio del process empleado un while de not Empty(Pagos) para que priorice los pagos
